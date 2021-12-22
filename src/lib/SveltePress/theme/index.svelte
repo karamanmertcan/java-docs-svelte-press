@@ -77,7 +77,7 @@
 							{/if}
 						</g>
 					</svg>
-					<h1 style="margin-top: 1rem">Welcome to SveltePress</h1>
+					<h1 style="margin-top: 1rem">Welcome to CE343 Java Project Docs</h1>
 					<h2 class="subTitle">
 						Documentation for 
 						<Typewriter loop={3000} cursor="#ff3e00">
@@ -96,92 +96,8 @@
 				</Column>
 			</Row>
 		</Grid>
-		<Grid padding condensed>
-			<Row class="sp--header--tiles">
-				<Column md sm={breakpoints.sm}>
-					<Tile class="sp--tile">
-						<h2 class="tile--title">Powered by SvelteKit</h2>
-						<h4>
-							SveltePress is built on top of SvelteKit, a powerful web framework, while taking
-							advantage of Svelte's incredible performance and simplicity.
-						</h4>
-					</Tile>
-				</Column>
-				<Column md sm={breakpoints.sm}>
-					<Tile class="sp--tile"
-						><h2 class="tile--title">Made for humans</h2>
-						<h4>
-							Markdown files are structured according to the filesystem, shrinking the gap between
-							File Manager and content creator.
-						</h4></Tile
-					>
-				</Column>
-				<Column md sm={breakpoints.sm}>
-					<Tile class="sp--tile"
-						><h2 class="tile--title">Customizability</h2>
-						<h4>
-							Replacable themes, markdown converters, components, pages, functions... SveltePress
-							was made for you.
-						</h4></Tile
-					>
-				</Column>
-			</Row>
-			<Row class="sp--arrow--down">
-				<ArrowDown32 />
-			</Row>
-		</Grid>
 	</div>
-	<Grid padding class="sp--grid sp--features">
-		<Row class="sp--feature">
-			<Column md sm={12}>
-				<img
-					src="https://i.imgur.com/KidDqUy.png"
-					alt="a terminal showing the output of the tree command, output includes a file structure of markdown files and SveltePress sidebar generated using the previous structure"
-				/>
-			</Column>
-			<Column class="sp--feature--card" md sm={12}
-				><Tile class="sp--tile"
-					><h2 class="tile--title">Filesystem based Structure</h2>
-					<h4>Folders become categories, files become posts. Simple as that.</h4></Tile
-				></Column
-			>
-		</Row>
-		<Row class="sp--feature" style="flex-wrap: wrap-reverse;">
-			<Column class="sp--feature--card" md sm={12}
-				><Tile class="sp--tile"
-					><h2 class="tile--title">Themable</h2>
-					<h4>
-						With a theming API with almost zero restrictions, you can modify everything to fit your
-						needs.
-					</h4></Tile
-				></Column
-			>
-			<Column md sm={12}>
-				<img
-					src="https://i.imgur.com/SG5iPrc.png"
-					alt="the cakepop official theme in front of the carbon one"
-				/>
-			</Column>
-		</Row>
-		<Row class="sp--feature">
-			<Column md sm={12}>
-				<img
-					src="https://i.imgur.com/YCuLvMP.png"
-					alt="screenshots of multiple guis of sveltepress (gtk, qt, flutter (desktop & mobile)"
-				/>
-			</Column>
-			<Column class="sp--feature--card" md sm={12}
-				><Tile class="sp--tile"
-					><h2 class="tile--title">Compile to native</h2>
-					<h4>
-						Desktop, Mobile, e-books & more. With the power of Flutter, GTK, QT & Pandoc you can
-						target Web, Linux, MacOS, Windows, Android, iOS, .epub, .pdf, .docx & a whole lot more
-						from one codebase.
-					</h4></Tile
-				></Column
-			>
-		</Row>
-	</Grid>
+
 	<footer>
 		<span class="pd" /> 2021{currentYear === 2021 ? '' : ' - ' + currentYear} -
 		<a class="sp--link" href="https://geopjr.dev/">GeopJr</a>
