@@ -1,48 +1,51 @@
 ---
-postName: Installation, Running & Building
+postName: How To Use ?
 ---
 
-# Installation
-
-The best way to install SveltePress is by using [degit](https://github.com/Rich-Harris/degit). degit works similarly to git but uses only the latest commit (plus can be configured to delete some files), you can read more about it on its repo page.
+# Login
 
 ```bash
-# Replace `my-sveltepress-project` with the name you desire
-npx degit GeopJr/SveltePress my-sveltepress-project
-# or by using create-sveltepress-app (which wraps the above)
-npx create-sveltepress-app create my-sveltepress-project
-
-# Change directory to the folder from the previous step
-cd my-sveltepress-project
-
-# Install dependencies
-# PNPM is recommended but both YARN and NPM will do
-pnpm install
+Firstly, you should enter admin username and password to input fields.
 ```
 
-> Note: `src/routes/index.svelte` is self-contained, feel free to delete, modify or leave it as is.
-
-# Running
-
-> Handled by SvelteKit
+![Login Page](/project_login_page.png 'Login Page')
 
 ```bash
-# PNPM/YARN/NPM
-pnpm run dev -- --open
+After that, if you enter the right username and password you are going to see an success message and navigate to main page.If you see an error message please try again.
 ```
 
-# Building
+# Main Page
 
-> Handled by SvelteKit
+![The San Juan Mountains are beautiful!](/mainpage_project.png 'San Juan Mountains')
 
-Open `svelte.config.js` and choose your preferred adapter (the comments will guide you).
-
-```bash
-# PNPM/YARN/NPM
-pnpm run build
-
-# Preview your build
-pnpm run preview
+```
+In the main page you are going to see an CRUD operator buttons and input fields.
+You are going to see user infos and book infos at the right side of the page.
+Table has 6 columns which  they show user database id, library member id, library member name, book name, book taken date from library and return date for the book.
 ```
 
-> Note: Both `pnpm/yarn/npm run build` & `pnpm/yarn/npm run dev` run a small script that generates some index databases before running the svelte-kit command.
+> Note : The library manager should enter in a string type informations to text field.
+
+# Add Operation
+
+```
+Firstly, you have to fill the input fields with the correct informations. Then you can press the add button.
+```
+
+# Update Operation
+
+```
+Firstly, you have to select the row from the table. When you select the row you can type the infos to text fields . When you complete this you can press update button.
+```
+
+# Delete Operation
+
+```
+Firstly, you have to select the row from the table. When you select the row you can press the delete button.
+```
+
+# Cancel Operation
+
+```
+It is exiting the program.
+```

@@ -89,7 +89,6 @@
 		{/if}
 	</HeaderNav>
 	<HeaderUtilities>
-		<Search />
 		<div class="sp--theme-switcher-button">
 			<Button
 				iconDescription="Toggle Contrast"
